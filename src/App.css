@@ -27,7 +27,117 @@
 .App-link {
   color: #61dafb;
 }
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
 
+.background {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.background span {
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 20vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 20;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+  color: #E45A84;
+  top: 62%;
+  left: 77%;
+  animation-duration: 137s;
+  animation-delay: -239s;
+  transform-origin: -10vw 12vh;
+  box-shadow: -40vmin 0 5.963081720163019vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #E45A84;
+  top: 43%;
+  left: 44%;
+  animation-duration: 79s;
+  animation-delay: -181s;
+  transform-origin: 17vw 2vh;
+  box-shadow: 40vmin 0 5.90149268317676vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #FFACAC;
+  top: 6%;
+  left: 95%;
+  animation-duration: 122s;
+  animation-delay: -210s;
+  transform-origin: 5vw -2vh;
+  box-shadow: -40vmin 0 5.317963206971287vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #FFACAC;
+  top: 73%;
+  left: 5%;
+  animation-duration: 134s;
+  animation-delay: -242s;
+  transform-origin: -2vw -8vh;
+  box-shadow: 40vmin 0 5.209942232004023vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #FFACAC;
+  top: 68%;
+  left: 58%;
+  animation-duration: 300s;
+  animation-delay: -19s;
+  transform-origin: 8vw 7vh;
+  box-shadow: -40vmin 0 5.199603442128019vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #FFACAC;
+  top: 25%;
+  left: 96%;
+  animation-duration: 217s;
+  animation-delay: -172s;
+  transform-origin: -14vw 21vh;
+  box-shadow: 40vmin 0 5.434534155383978vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #583C87;
+  top: 38%;
+  left: 17%;
+  animation-duration: 129s;
+  animation-delay: -100s;
+  transform-origin: 14vw 14vh;
+  box-shadow: 40vmin 0 5.467997845189867vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #FFACAC;
+  top: 82%;
+  left: 26%;
+  animation-duration: 226s;
+  animation-delay: -76s;
+  transform-origin: 8vw -17vh;
+  box-shadow: 40vmin 0 5.866116442149953vmin currentColor;
+}
+section{
+  width: 100%;
+  height: 100vh;
+}
+section{
+  padding: 0 20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

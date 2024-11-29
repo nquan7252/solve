@@ -1,0 +1,34 @@
+.file-drop{
+    cursor: pointer;
+    /* font-size: 0.8rem; */
+    background-color: rgba(211, 211, 211, 0.2);
+    padding: 100px 0;
+    border: 2px solid lightgray;
+    border-style: dashed;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .file-drop img{
+    width: 30px;
+    height: 30px;
+  }
+.file-drop-container{
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+#bin{
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    right: 10px;
+    top:10px;
+    color: white;
+    cursor: pointer;
+}

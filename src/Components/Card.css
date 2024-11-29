@@ -1,0 +1,41 @@
+.card{
+    display: flex;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: fit-content;
+    height: 100%;
+    cursor: pointer;
+    transition: 200ms;
+    box-shadow: 0 0 1px lightgrey ;
+}
+.card:hover{
+    border: 1px solid black;
+}
+.card .img-container{
+    height:50px;
+    width: 50px;
+    margin-top: 10px;
+}
+.card h4{
+    font-weight: 600;
+}
+.card .info-container{
+    padding-left:20px;
+    width: 250px;
+
+}
+.card img{
+    /* height:50px; */
+    /* width: 50px; */
+}
+.card-container{
+    gap:20px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: stretch;
+
+}
+.card-container a{
+    height: 130px;
+}
